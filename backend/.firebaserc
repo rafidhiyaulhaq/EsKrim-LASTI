@@ -1,0 +1,8 @@
+{
+  "projects": {
+    "production": "eskrim-lasti",
+    "default": "eskrim-lasti"
+  },
+  "targets": {},
+  "etags": {}
+}
