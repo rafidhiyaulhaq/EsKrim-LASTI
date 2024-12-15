@@ -1,12 +1,9 @@
 const admin = require('firebase-admin');
-const serviceAccount = require('./firebase.json');
 
-// Initialize Firebase Admin
-admin.initializeApp({
-  credential: admin.credential.cert(serviceAccount)
-});
+// Initialize Firebase Admin tanpa service account untuk local development
+admin.initializeApp();
 
-// Import and export all functions
+// Import dan export semua functions
 const inventory = require('./inventoryManagement');
 const sales = require('./salesMarketing');
 
